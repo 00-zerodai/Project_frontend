@@ -1,0 +1,63 @@
+.bkg {
+  background-color: #ffd000;
+
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  align-items: flex-start;   /* stick near top */
+
+  min-height: 100vh;         /* make container full height */
+  width: 100vw;              /* full viewport width */
+  margin: 0;
+  padding: 50px;             /* reduce padding to avoid overflow */
+  box-sizing: border-box;    /* include padding in width calculation */
+  overflow-x: hidden;        /* hide horizontal scroll */
+  padding-top: 250px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;   /* stack image on top, text below */
+  align-items: center;      /* center content horizontally */
+  width: 300px;
+  height: 400px;
+  padding: 20px;
+ 
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 10px 4px 8px rgb(0, 0, 0);
+  box-sizing: border-box;
+  border: 2px solid black;
+}
+
+.card-image {
+  width: 100%;               /* image smaller than card width */
+  height: 150px;            /* adjust height */
+  object-fit: cover;        /* fill space nicely */
+  border-radius: 8px 8px 8px 8px; /* rounded top corners only */
+  margin-bottom: 15px;      /* space between image and text */
+  align-self: flex-start;   /* push image to the left if not full width */
+}
+.learn{
+    background-color: #ffd000;
+    padding: 5px 10px;   /* space inside the box */
+  margin: 0;            /* remove default margin */
+  align-self: flex-start; /* move the whole box to the left */
+  border-radius: 4px;    
+  font-family: 'fontBold', sans-serif;
+
+}
+@font-face {
+  font-family: 'fontMedium';   /* name you choose to use in CSS */
+  src: url("assets/fonts/static/Figtree-Medium.ttf") format('truetype'); /* path to font file */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+    font-family: "fontBold";
+    src: url("assets/fonts/static/Figtree-ExtraBold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
