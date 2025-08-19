@@ -18,7 +18,7 @@
   display: flex;
   flex-direction: column;   /* stack image on top, text below */
   align-items: center;      /* center content horizontally */
-  width: 300px;
+  width: 370px;
   height: 400px;
   padding: 20px;
  
@@ -58,6 +58,66 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face{
+    font-family: "fontVariable";
+    src: url("assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+.publish{
+    
+    padding: 5px 10px;   /* space inside the box */
+  margin: 0;            /* remove default margin */
+  align-self: flex-start; /* move the whole box to the left */
+     
+  font-family: 'fontMedium', sans-serif;
+  font-size: small;
+
+
+}
+.heading{
+    
+    padding: 10px 10px;   /* space inside the box */
+  margin: 0;            /* remove default margin */
+  align-self: flex-start; 
+     
+  font-family: 'fontBold', sans-serif;
+  font-weight: lighter;
+  font-size: x-large;
+ 
+  
+
+}
+.content{
+    
+    padding: 5px 10px;   /* space inside the box */
+  margin: 0;            /* remove default margin */
+  align-self: flex-start; 
+     
+  font-family: 'fontVariable', sans-serif;
+  font-weight: lighter;
+  font-size: small;
+ 
+  
+
+}
+.profile_container {
+  align-self: flex-start;   /* aligns container to the left */
+  margin-top: auto;  
+  display: flex;
+  align-items: center;
+         
+}
+.profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;  /* make it round */
+}
+.profile_name{
+    font-family: "fontBold" ,sans-serif;
+    margin-left: 10px;
+}
+
 
 
 
