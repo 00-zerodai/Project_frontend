@@ -17,16 +17,23 @@
 .card {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;     /* keep left-aligned */
-  width: 90%;                  /* responsive width */
-  max-width: 370px;            /* won’t grow too big */
+  align-items: flex-start;     
+  width: 90%;                  
+  max-width: 370px;            
   padding: 20px;
-
   background-color: #fff;
   border-radius: 12px;
   box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
   border: 2px solid black;
+
+  /* Add smooth transition for hover effects */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px) scale(1.02);          /* lift + slight scale */
+  box-shadow: 12px 8px 20px rgba(0, 0, 0, 0.35);   /* stronger shadow */
+  background-color: #fff9c0;                        /* subtle highlight */
 }
 
 .card-image {
